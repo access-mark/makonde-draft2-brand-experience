@@ -1,0 +1,45 @@
+/* Makonde 1.3: widescreen proportions and legibility. Loaded after base styles. */
+:root{--wide:1680px}
+@media(min-width:1351px){
+ .wrap{width:min(1680px,calc(100% - 112px))}
+ .nav{min-height:100px;gap:38px}
+ .brand img{width:295px;max-height:90px}
+ .navlinks{gap:clamp(16px,1.2vw,26px)}
+ .navlinks a{font-size:clamp(14px,.87vw,16px)}
+ .navlinks .btn{font-size:15px}
+ .hero-inner{min-height:560px;padding:76px 0 72px;grid-template-columns:minmax(0,1.12fr) minmax(460px,.88fr);gap:clamp(70px,6vw,140px)}
+ .hero h1{font-size:clamp(60px,4.15vw,82px);max-width:880px;line-height:1.09}
+ .hero .lead{font-size:clamp(20px,1.17vw,23px);max-width:760px}
+ .hero-art{padding:36px 40px}
+ .art-node{padding:21px 25px}
+ .art-node b{font-size:20px}.art-node span{font-size:16px}
+ .section{padding:86px 0}
+ .intro{max-width:1080px;margin-bottom:36px}
+ .intro h2{font-size:clamp(38px,2.8vw,52px)}
+ .grid3{gap:30px}
+ .card{padding:40px 42px}
+ .card h3{font-size:25px}
+ .card p{font-size:17px;line-height:1.75}
+ .section-kicker{font-size:19px}
+ .trust .wrap{font-size:15px;padding:19px 0}
+ .pagehead{padding:88px 0}
+}
+@media(min-width:1051px) and (max-width:1350px){
+ .wrap{width:calc(100% - 72px)}
+ .hero-inner{min-height:530px;padding:68px 0;gap:45px}
+ .hero h1{font-size:clamp(48px,4.7vw,65px)}
+ .hero .lead{font-size:19px}
+ .hero-art{padding:27px}
+ .art-node{padding:18px}
+ .section{padding:82px 0}
+}
+@media(max-width:1050px){
+ .hero-inner{padding:70px 0 64px}
+ .hero h1{max-width:800px}
+}
+@media(max-width:650px){
+ .hero-inner{padding:58px 0}
+ .hero h1{font-size:clamp(38px,10vw,52px)}
+ .hero .lead{font-size:18px}
+ .art-node span{font-size:14px}
+}
